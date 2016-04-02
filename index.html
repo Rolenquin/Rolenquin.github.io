@@ -51,10 +51,21 @@
 	
  });	
   </script>
-  <style>
-  .ui-menu { width: 150px; }
-  #mainMenu {width: 150px; }
-  </style>
+	<style>
+		.ui-menu { width: 200px; }
+		#mainMenu {width: 200px; }
+  
+		#pseudonyms {
+			position: relative;
+			top: 0px;
+			left: 0px;
+		} 
+
+		#artist {
+			position: relative;
+			top: 25%;
+		}
+	</style>
 </head>
 <body>
 
@@ -63,40 +74,40 @@
 data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':true,'playlist':[{'title':'Blast Off','url':'https://youtu.be/bJ6f6XNIVNw'},{'title':'Distant System','url':'https://soundcloud.com/esukurasu/distant-system'}, {'title':'Radiowaves','url':'https://soundcloud.com/esukurasu/radiowaves-instrumental'}]}" ></script>
 <!-- SCM Music Player script end -->
 
-<div id="pseudonyms"><button id="mainMenu">Pseudonyms</button>
-<ul id="menu">
-  <li>King Kour</li>
-  <li>>Esu Kurasu</li>
-  <li>Petal on the Waves</li>
-  <li class="ui-state-disabled"><span class="ui-icon ui-icon-print"></span>It's a Secret</li>
-  <li>
-    Playback
-    <ul>
-      <li id="prevButton"><span class="ui-icon ui-icon-seek-start"></span>Prev</li>
-      <li id="stopButton"><span class="ui-icon ui-icon-stop"></span>Stop</li>
-      <li id="playButton"><span class="ui-icon ui-icon-play"></span>Play</li>
-      <li id="nextButton"><span class="ui-icon ui-icon-seek-end"></span>Next</li>
-    </ul>
-  </li>
-</ul>
+<div id="pseudonyms">
+	<button id="mainMenu">Pseudonyms</button>
+	<ul id="menu">
+		<li>King Kour</li>
+		<li>Esu Kurasu</li>
+		<li>Petal on the Waves</li>
+		<li class="ui-state-disabled"><span class="ui-icon ui-icon-print"></span>It's a Secret</li>
+		<li>
+		Playback
+		<ul>
+			<li id="prevButton"><span class="ui-icon ui-icon-seek-start"></span>Prev</li>
+			<li id="stopButton"><span class="ui-icon ui-icon-stop"></span>Stop</li>
+			<li id="playButton"><span class="ui-icon ui-icon-play"></span>Play</li>
+			<li id="nextButton"><span class="ui-icon ui-icon-seek-end"></span>Next</li>
+		</ul>
+		</li>
+	</ul>
 </div>
 
 <div id="artist">
-<ul>
-	<li><a href="#bio">Bio</a></li>
-	<li><a href="#discography">Discography</a></li>
-	<li><a href="#details">Additional Details</a></li>
-</ul>
-<div id="bio">
+	<ul>
+		<li><a href="#bio">Bio</a></li>
+		<li><a href="#discography">Discography</a></li>
+		<li><a href="#details">Additional Details</a></li>
+	</ul>
+	<div id="bio">
 
-</div>
-<div id="discography">
+	</div>
+	<div id="discography">
 
-</div>
-<div id="details">
+	</div>
+	<div id="details">
 
-</div>
-
+	</div>
 </div>
 </body>
 </html>
