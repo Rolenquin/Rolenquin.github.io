@@ -65,6 +65,11 @@
 			position: relative;
 			top: 25%;
 		}
+		div span { 
+		  margin-top: -300px;        /* Size of fixed header */
+		  padding-bottom: 300px; 
+		  display: block; 
+		}
 	</style>
 </head>
 <body>
@@ -99,7 +104,8 @@ data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffl
 		<li><a href="#discography">Discography</a></li>
 		<li><a href="#details">Additional Details</a></li>
 	</ul>
-	<div id="bio">
+	<div>
+	<span id="bio"></span>
 
 	</div>
 	<div id="discography">
