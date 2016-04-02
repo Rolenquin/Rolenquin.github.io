@@ -25,6 +25,11 @@
 	  }
 	);
 	
+	//stop button
+	$("#stopButton").on( "click", function() {
+		SCM.pause();
+	});
+	
  });	
   </script>
   <style>
@@ -36,7 +41,7 @@
 
 <!-- SCM Music Player http://scmplayer.net -->
 <script type="text/javascript" src="http://Rolenquin.github.io/scm/script.js" 
-data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':false,'playlist':[{'title':'Blast Off','url':'https://youtu.be/bJ6f6XNIVNw'}]}" ></script>
+data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':true,'playlist':[{'title':'Blast Off','url':'https://youtu.be/bJ6f6XNIVNw'}]}" ></script>
 <!-- SCM Music Player script end -->
 
 <div id="menuCat1"><button id="mainMenu">Menu</button>
@@ -49,7 +54,7 @@ data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffl
     Playback
     <ul>
       <li><span class="ui-icon ui-icon-seek-start"></span>Prev</li>
-      <li><span class="ui-icon ui-icon-stop"></span>Stop</li>
+      <li id="stopButton"><span class="ui-icon ui-icon-stop"></span>Stop</li>
       <li><span class="ui-icon ui-icon-play"></span>Play</li>
       <li><span class="ui-icon ui-icon-seek-end"></span>Next</li>
     </ul>
