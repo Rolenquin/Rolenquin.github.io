@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>King Kour</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="jquery/external/jquery/jquery.js"></script>
+	<script src="jquery/jquery-ui.js"></script>
+	<script>
+  $(function() {
+    $("#menu").menu();
+	$("#menu").hide();
+	
+	$("#mainMenu").button({
+	  icons: {
+		primary: "ui-icon-gear",
+		secondary: "ui-icon-triangle-1-s"
+	  }
+	});
+	$("#mainMenu").on( "click", function() {
+		$("#menu").toggle();
+	});
+	$( "#menu" ).hover(
+	  function() {}, function() {
+		$( this ).toggle();
+	  }
+	);
+	
+ });	
+  </script>
+  <style>
+  .ui-menu { width: 150px; }
+  #mainMenu {width: 150px; }
+  </style>
+</head>
+<body>
+
+<!-- SCM Music Player http://scmplayer.net -->
+<script type="text/javascript" src="scm/script.js" 
+data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':false,'playlist':[{'title':'Blast Off','url':'https://youtu.be/bJ6f6XNIVNw'}]}" ></script>
+<!-- SCM Music Player script end -->
+
+<div id="menuCat1"><button id="mainMenu">Menu</button>
+<ul id="menu">
+  <li><span class="ui-icon ui-icon-disk"></span>Important Data</li>
+  <li><span class="ui-icon ui-icon-zoomin"></span>Closer Look</li>
+  <li><span class="ui-icon ui-icon-zoomout"></span>Macroscopic View</li>
+  <li class="ui-state-disabled"><span class="ui-icon ui-icon-print"></span>It's a Secret</li>
+  <li>
+    Playback
+    <ul>
+      <li><span class="ui-icon ui-icon-seek-start"></span>Prev</li>
+      <li><span class="ui-icon ui-icon-stop"></span>Stop</li>
+      <li><span class="ui-icon ui-icon-play"></span>Play</li>
+      <li><span class="ui-icon ui-icon-seek-end"></span>Next</li>
+    </ul>
+  </li>
+</ul>
+</div>
+</body>
+</html>
