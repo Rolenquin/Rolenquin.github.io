@@ -10,6 +10,12 @@
     $("#menu").menu();
 	$("#menu").hide();
 	
+	$(function() {
+	$( "#artist" ).tabs();
+	});
+	</script>
+	
+	
 	$("#mainMenu").button({
 	  icons: {
 		primary: "ui-icon-gear",
@@ -56,14 +62,14 @@
 
 <!-- SCM Music Player http://scmplayer.net -->
 <script type="text/javascript" src="http://Rolenquin.github.io/scm/script.js" 
-data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':true,'playlist':[{'title':'Blast Off','url':'https://youtu.be/bJ6f6XNIVNw'},{'title':'Distant System','url':'https://soundcloud.com/esukurasu/distant-system'}]}" ></script>
+data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':true,'playlist':[{'title':'Blast Off','url':'https://youtu.be/bJ6f6XNIVNw'},{'title':'Distant System','url':'https://soundcloud.com/esukurasu/distant-system'}, {'title':'Radiowaves','url':'https://soundcloud.com/esukurasu/radiowaves-instrumental'}]}" ></script>
 <!-- SCM Music Player script end -->
 
-<div id="menuCat1"><button id="mainMenu">Menu</button>
+<div id="pseudonyms"><button id="mainMenu">Pseudonyms</button>
 <ul id="menu">
-  <li><span class="ui-icon ui-icon-disk"></span>Important Data</li>
-  <li><span class="ui-icon ui-icon-zoomin"></span>Closer Look</li>
-  <li><span class="ui-icon ui-icon-zoomout"></span>Macroscopic View</li>
+  <li>King Kour</li>
+  <li>>Esu Kurasu</li>
+  <li>Petal on the Waves</li>
   <li class="ui-state-disabled"><span class="ui-icon ui-icon-print"></span>It's a Secret</li>
   <li>
     Playback
@@ -75,6 +81,24 @@ data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffl
     </ul>
   </li>
 </ul>
+</div>
+
+<div id="artist">
+<ul>
+	<li><a href="#bio">Bio</a></li>
+	<li><a href="#discography">Discography</a></li>
+	<li><a href="#details">Additional Details</a></li>
+</ul>
+<div id="bio">
+
+</div>
+<div id="discography">
+
+</div>
+<div id="details">
+
+</div>
+
 </div>
 </body>
 </html>
